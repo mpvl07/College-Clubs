@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music</title>
+  <style> 
+  .bg-image {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        
+          .overlay {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .container {
+            text-align: center;
+            color: #fff;
+          }
+          
+          .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+          }
+          
+          .animate__fadeInDown {
+            animation-name: fadeInDown;
+          }
+          
+          .animate__fadeInUp {
+            animation-name: fadeInUp;
+          }
+          
+          @keyframes fadeInDown {
+            from {
+              opacity: 0;
+              transform: translate3d(0, -100%, 0);
+            }
+          
+            to {
+              opacity: 0.9;
+              transform: none;
+            }
+          }
+          
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translate3d(0, 100%, 0);
+            }
+          
+            to {
+              opacity: 1;
+              transform: none;
+            }
+          }
+
+          .animated-text {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fade-up 1s ease forwards;
+  }
+
+  @keyframes fade-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }    
+        
+    
+  </style>
+
+</head>
+<body>
+  
+  <%- include('partials/boot.ejs') %>
+
+  <h1 class="animate__animated animate__bounce animate_slower">Music Club </h1>
+<p class="animate__animated animate__bounce animate__faster">Welcome to the Music Club, where students come together to share their passion for music! Whether you're an experienced musician or a beginner looking to learn, our club offers a supportive and creative environment where you can explore different genres, instruments, and styles. From jam sessions to performances, workshops to competitions, there's always something exciting happening in our club. Join us and discover the joy of making music with a community of like-minded individuals.</p>
+
+<div class="bg-image" style="background-image: url(' https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.s6Xz7MgtbdY8XHaPuFWJDwHaE7%26pid%3DApi&f=1&ipt=a4de26c61e43867b6c8ed180bcdfbf9f83511ecbf3751ebcac6d62e5d580c357&ipo=images');">
+  <div class="overlay">
+    <div class="container">
+      <h1 class="text-center animate__animated animate__fadeInDown animated-text">Music!!!!</h1>
+      <p class="text-center animate__animated animate__fadeInUp">Welcome to the Music Club, where students come together to share their passion for music! Whether you're an experienced musician or a beginner looking to learn, our club offers a supportive and creative environment where you can explore different genres, instruments, and styles. From jam sessions to performances, workshops to competitions, there's always something exciting happening in our club. Join us and discover the joy of making music with a community of like-minded individuals.</p>
+   
+    <a href="#" class="btn bg-pink btn-primary mt-3">Register</a> </div>
+  </div>
+</div>
+
+    </body>
+    </html>
+
+ 

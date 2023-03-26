@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href ="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <%- include('partials/boot.ejs') %>
+    <style>
+        .bg-image {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+          
+          .overlay {
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          .container {
+            text-align: center;
+            color: #fff;
+          }
+          
+          .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+          }
+          
+          .animate__fadeInDown {
+            animation-name: fadeInDown;
+          }
+          
+          .animate__fadeInUp {
+            animation-name: fadeInUp;
+          }
+          
+          @keyframes fadeInDown {
+            from {
+              opacity: 0;
+              transform: translate3d(0, -100%, 0);
+            }
+          
+            to {
+              opacity: 0.9;
+              transform: none;
+            }
+          }
+          
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translate3d(0, 100%, 0);
+            }
+          
+            to {
+              opacity: 1;
+              transform: none;
+            }
+          }
+
+          .animated-text {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fade-up 1s ease forwards;
+  }
+
+  @keyframes fade-up {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }    
+        
+    </style>
+</head>
+<body>
+
+  <div class="container nav-links" id="navLinks">
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark navbar-expand-sm">
+        <div class="container-fluid">
+
+      
+            <a class="navbar-brand" href="#">
+              <img src="nit-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+              NIT ANDHRAPRADESH
+            </a>
+          <a class="navbar-brand d-none" href="#">HOME</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav justify-content-end">
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/faqs">FAQ'S</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/clubs">CLUBS</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/events">Events</a>
+              </li>
+            </ul>
+            <div class="ml-3">
+            <button class="btn btn-outline-warning btn" onclick="window.location.href='/google/'">
+              Login
+              </button> 
+            </div>
+          </div>
+        </div>
+      </nav>
+      </div>
+
+
+
+
+
+
+  
+    <div class="card bg-dark text-white">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.nmf3wKfT41XP4SUKlYksuAHaEK%26pid%3DApi&f=1&ipt=8578fa2aab1f313071fc476e499be978d0efa05487c06ab5405234b29a34a573&ipo=images" class="card-img" alt="Background Image">
+        <div class="card-img-overlay d-flex flex-column justify-content-center">
+          <h1 class="card-title display-2 mb-4 animate__animated animate__fadeInUp">Chitram Club</h1>
+          <h1>Welcome to the Chitram club!, <%= pq %></h1>
+          <p class="card-text lead  animate__animated animate__fadeInDown animated-text ">Welcome to Chitram Club - "Chitram club is a vibrant community of film enthusiasts, aspiring actors, and creative minds who come together to learn, collaborate, and make great movies and short films. Our club offers a wide range of opportunities for individuals who are passionate about filmmaking and acting, including workshops, training sessions, and hands-on experience. Whether you're a seasoned professional or a beginner, our friendly and supportive community is here to help you develop your skills and achieve your creative goals."
+            The place for movie lovers and short film enthusiasts.Take a part in the club and show your talents in the movie direction and explore all the film arts</p>
+          <!-- <a href="#" class="btn bg-pink btn-primary mt-3">Join Now</a> -->
+        
+          <button class="btn btn-outline-warning btn" onclick="window.location.href='/registraion'">
+            Add Event
+            </button> 
+        </div>
+      </div>
+      <div class="bg-image" style="background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.9aBQV44QAnljvT_xGmnI5QHaEK%26pid%3DApi&f=1&ipt=1885314f0cd24dc7015640e0cb27cf823f96e99f3fe18de1ddb4806bf0314de7&ipo=images');">
+        <div class="overlay">
+          <div class="container">
+            <h1 class="text-center animate__animated animate__fadeInDown animated-text">Auditions closes soon!!!!</h1>
+            <p class="text-center animate__animated animate__fadeInUp">A club for movie and short film enthusiasts</p>
+         
+            <div class="trailer-container active">
+                <video src="shortfilm.mp4" controls></video>
+                <i class="fas fa-times fa-2x close-icon"></i>
+                
+               
+            </div>
+        
+        
+    
+        </div>
+        </div>
+      </div>
+      
+
+    <script src="../js/video.js"></script>
+
+</body>
+</html>

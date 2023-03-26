@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clubs</title>
+  <style>
+    /* The grid container */
+.club-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+.club-container {
+  background-color: #f1f1f1;
+ margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.club-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.prayatnam-container {
+  animation: pulse 2s infinite alternate;
+}
+
+.prayatnam-link {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  /* border: 1px solid #000; */
+  text-decoration: none;
+  color:#502c4c;
+}
+.prayatnam-link:hover {
+  animation: moveUpDown 0.5s linear infinite;
+}
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+
+
+.chitram-container {
+  animation: pulse 1s 0.2s infinite alternate;
+}
+
+.music-container {
+  animation: pulse 1s 0.4s infinite alternate;
+}
+
+.physical-education-container {
+  animation: pulse 1s 0.6s infinite alternate;
+}
+
+.brindavanam-assocaition-container {
+  animation: pulse 1s 0.8s infinite alternate;
+}
+
+/* The pulse animation */
+@keyframes pulse {
+  from { transform: scale3d(1, 1, 1); }
+  to { transform: scale3d(1.1, 1.1, 1.1); }
+}
+
+.cc{
+  border-radius: 100%;
+  border: 2px solid #000;
+}
+
+
+.club-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.club-container {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.club-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.prayatnam-container {
+  animation: pulse 1s infinite alternate;
+}
+
+.chitram-container {
+  animation: pulse 1s 0.2s infinite alternate;
+}
+
+.music-container {
+  animation: pulse 1s 0.4s infinite alternate;
+}
+
+.physical-education-container {
+  animation: pulse 1s 0.6s infinite alternate;
+}
+
+.brindavanam-assocaition-container {
+  animation: pulse 1s 0.8s infinite alternate;
+}
+
+/* The pulse animation */
+@keyframes pulse {
+  from { transform: scale3d(1, 1, 1); }
+  to { transform: scale3d(1.1, 1.1, 1.1); }
+}
+  </style>
+<%- include('partials/boot.ejs') %>
+
+</head>
+<body>
+<div class="mb-10">
+  <nav class="navbar navbar-expand-lg bg-dark fixed-top navbar-dark navbar-expand-sm shadow-lg">
+    <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">
+          <img src="nit-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          NIT ANDHRAPRADESH
+        </a>
+      <a class="navbar-brand d-none" href="#">HOME</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav justify-content-end">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="/faqs">FAQ'S</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="/clubs">Clubs</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link active" aria-current="page" href="/events">Events</a>
+          </li>
+        </ul>
+        <div class="ml-3">
+        <button class="btn btn-outline-warning btn" onclick="window.location.href='/google'">
+          Login
+          </button> 
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>
+  <div class="club-container prayatnam-container">
+    <a href="/clubs/prayatnam"><h1 class="fw-bold prayatnam-link">Prayatnam</h1></a>
+    <img class="cc" src='PrP.png' width="89" height="78" alt="description of the image bokka">   
+    <p>"Chitram club is a vibrant community of film enthusiasts, aspiring actors, and creative minds who come together to learn, collaborate, and make great movies and short films. Our club offers <button class=" my-3 btn btn-outline-info" onclick="window.location.href='/clubs/Chitram'">
+      Read More....
+    </button></p>
+  </div>
+<div class="club-container chitram-container">
+  <a href="/clubs/chitram"> <h1 class="fw-bold prayatnam-link">Chitram Club</h1></a>
+    <img class="cc" src='ChP.png' width="89" height="78" alt="description of the image bokka">
+    <p>"Chitram club is a vibrant community of film enthusiasts, aspiring actors, and creative minds who come together to learn, collaborate, and make great movies and short films. Our club offers <button class=" my-3 btn btn-outline-info" onclick="window.location.href='/clubs/Chitram'">
+      Read More....
+    </button></p>
+</div>
+<div class="club-container music-container">
+  <a href="/clubs/csea"><h1 class="fw-bold prayatnam-link">Music Club</h1></a>
+  <img class="cc" src='MuP.png' width="99" height="88" alt="description of the image bokka">
+  <p>"Welcome to the Music Club, where students come together to share their passion for music! Whether you're an experienced musician or a beginner looking to learn, our club offers a supportive and creative environment where you can explore different genres, instruments
+    , <br> <button class=" my-3 MU btn btn-outline-info" onclick="window.location.href='/clubs/csea'">
+    Read More....
+  </button></p>
+</div>
+<div class="club-container physical-education-container">
+  <h1 class="fw-bold prayatnam-link">Physical-Education Club</h1>
+    <img class="cc" src='PhyP.png' width="89" height="78" alt="description of the image bokka">
+    <p>"Welcome to the Music Club, where students come together to share their passion for music! Whether you're an experienced musician or a beginner looking to learn, our club offers a supportive and creative environment where you can explore different genres, instruments, <br> <button class=" my-3 MU btn btn-outline-info" onclick="window.location.href='/clubs/csea'">
+      Read More....
+    </button></p>
+</div>
+<div class="club-container brindavanam-assocaition-container">
+  <h1 class="fw-bold prayatnam-link">Brindavanam Club</h1>
+  <img class="cc" src='BrP.png' width="109" height="78" alt="description of the image bokka">
+  <p>"Welcome to the Music Club, where students come together to share their passion for music! Whether you're an experienced musician or a beginner looking to learn, our club offers a supportive and creative environment where you can explore different genres, instruments, <br> <button class=" my-3 MU btn btn-outline-info" onclick="window.location.href='/clubs/csea'">
+    Read More....
+  </button></p>
+  </div>
+</body>
+</html>
+
+
+
+
+

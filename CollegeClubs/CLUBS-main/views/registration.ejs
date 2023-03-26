@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="regis.css" /> 
+    <title>Document</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  height:400px;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  border-radius: 5px;
+
+}
+
+label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea,
+input[type="date"],
+input[type="time"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input[type="submit"] {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #005F6B;
+}
+
+input[type="file"] {
+  padding: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    padding: 20px;
+  }
+  
+  input[type="submit"] {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+}
+
+    </style>
+   
+</head>
+<body>
+    <Html>
+    
+    <head>
+        <title>
+            Registration Page
+        </title>
+    </head>
+    
+    <body>
+        <br>
+        <br>
+        <h1>Club Event Form</h1>
+        <form action="/registraion" method="POST">
+            
+                <label for="clubname">Club Name:</label>
+                <input type="text" id="clubname" name="clubname"><br><br>
+            
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image"><br><br>
+            
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+            
+                <label for="description">Description:</label>
+                <textarea id="description" name="description"></textarea><br><br>
+            
+                <label for="venue">Venue:</label>
+                <input type="text" id="venue" name="venue"><br><br>
+            
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+            
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time"><br><br>
+            
+                <input type="submit" value="Submit">
+            </form>
+    </body>
+    
+    </html>
+    
+
+</body>
+</html>

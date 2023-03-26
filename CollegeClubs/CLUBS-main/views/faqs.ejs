@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faqs.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+        <%- include('partials/boot.ejs') %>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Sacramento&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    font-size:12px;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    position: relative;
+    background: #fff;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    filter:drop-shadow(0 0 10px rgba(0,0,0,0.5));
+}
+.container h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.accordian img{
+    position: relative;
+    width:350px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+.content-accordian{
+    margin-top:35px;
+    margin-right:50px;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+.question h3{
+    margin:1.4rem 0rem;
+    font-size:1.2rem;
+    font-weight:500;
+    color:#000;
+}
+.question-btn{
+    font-size:1.5rem;
+    background: transparent;
+    border-color:transparent;
+    cursor: pointer;
+}
+.up-icon{
+    display:none;
+
+}
+.answer{
+    font-size:1.2rem;
+    line-height:1.8rem;
+    display:none;
+}
+.show-text .answer{
+    display:block;
+}
+.show-text .up-icon{
+    display:inline;
+}
+.show-text .down-icon{
+    display:none;
+}
+@media screen and (min-width:700px){
+    .accordian{
+        width:920px;
+        height:0;
+        display:flex;
+    }
+    .accordian img{
+        position:relative;
+        width:300px;
+        top:30px;
+        
+    }
+    .question-answer{
+        width:100%;
+        border-bottom: 1px solid #e8e8e8;
+
+    }
+    .content-accordian{
+        margin-top: 85px;;
+    }
+    .container h1{
+        margin-top:50px;
+        font-size:3rem;
+
+    }
+}
+</style>
+
+
+
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently asked Questions  <i id="back" class="fa fa-1x bkwd fa-question fa-solid"></i></h1>
+        <main class="accordian">
+            <div class="image">
+                <img src="faq.jpg" alt="faq-image">
+            </div>
+            <div class="content-accordian">
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>From which year, we can join clubs? </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fa-regular fa-chevron-up"></i>
+                                <i class="fas. fa-drum"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fa-regular fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>jshu  dkjdshuhdw jijdihdw mwjj whh wmkdjihw djhdwd  kdjijd  ffnk
+                            bjdjdekfjekfekfekfoekfjkndke dnjd dkjid lwiiueiuri3 er383ik dndij
+                            dkjdief4n
+                        </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>From which year, we can join clubs? 
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fa-regular fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fa-regular fa-chevron-down"></i>
+                            </span>
+                        </h3>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>jshu dkjdshuhdw jijdihdw mwjj whh wmkdjihw djhdwd kdjijd ffnk
+                            bjdjdekfjekfekfekfoekfjkndke dnjd dkjid lwiiueiuri3 er383ik dndij
+                            dkjdief4n
+                        </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>From which year, we can join clubs? </h3>
+                        <h3>From which year, we can join clubs?  <i class="fa fa-1.3x  fa-chevron-down fa-solid"></i></h3>
+                        <!-- <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fa-regular fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fa-regular fa-chevron-down"></i>
+                            </span>
+                        </button> -->
+                    </div>
+                    <div class="answer">
+                        <p>jshu dkjdshuhdw jijdihdw mwjj whh wmkdjihw djhdwd kdjijd ffnk
+                            bjdjdekfjekfekfekfoekfjkndke dnjd dkjid lwiiueiuri3 er383ik dndij
+                            dkjdief4n
+                        </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>From which year, we can join clubs?  <i class="fa fa-1.3x  fa-chevron-down fa-solid"></i></h3>
+
+
+
+
+
+                        <!-- <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fa-regular fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fa-regular fa-chevron-down"></i>
+                            </span>
+                        </button> -->
+                    </div>
+                    <div class="answer">
+                        <p>jshu dkjdshuhdw jijdihdw mwjj whh wmkdjihw djhdwd kdjijd ffnk
+                            bjdjdekfjekfekfekfoekfjkndke dnjd dkjid lwiiueiuri3 er383ik dndij
+                            dkjdief4n
+                        </p>
+                    </div>
+                </div>
+                <div class="question-answer">
+                    <div class="question">
+                        <h3>From which year, we can join clubs? </h3>
+                        <button class="question-btn">
+                            <span class="up-icon">
+                                <i class="fa-regular fa-chevron-up"></i>
+                            </span>
+                            <span class="down-icon">
+                                <i class="fa-regular fa-chevron-down"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        <p>jshu dkjdshuhdw jijdihdw mwjj whh wmkdjihw djhdwd kdjijd ffnk
+                            bjdjdekfjekfekfekfoekfjkndke dnjd dkjid lwiiueiuri3 er383ik dndij
+                            dkjdief4n
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+       
+    </div>
+</body>
+</html>
